@@ -5,12 +5,23 @@ body{
     display: grid;
     font-family: Arial, Helvetica, sans-serif;
     grid-template-areas:
-    "head head"
-    "main aside"
-    "footer footer";
+    "head head head"
+    "side main aside"
+    "footer footer footer";
     grid-template-rows: auto;
-    grid-template-columns: 80vw 18vw;
+    grid-template-columns: auto 1fr 20vw;
     gap: 1vh;
+}
+
+#side-menu{
+    grid-area: side;
+    width: 5vw;
+    background-color: brown;
+    transition: width 0.3s ease;
+}
+
+#side-menu:hover{
+    width: 10vw;
 }
 
 header {
