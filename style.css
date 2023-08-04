@@ -1,16 +1,16 @@
 body{
     background-color: #1a1a1a;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #app{
     display: grid;
-    font-family: Arial, Helvetica, sans-serif;
     grid-template-areas:
-    "head head head"
     "side main aside"
     "footer footer footer";
     grid-template-rows: auto;
     grid-template-columns: auto 1fr 20vw;
     gap: 1vh;
+    margin-top: 8vh;
 }
 
 #side-menu{
@@ -26,7 +26,6 @@ body{
 
 header {
     height: 8vh;
-    grid-area: head;
     background-color: red;
     position: fixed;
     top: 0;
